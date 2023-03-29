@@ -1,12 +1,15 @@
 import java.util.Scanner;
+import java.util.Arrays;
 import static java.lang.Math.max;
 import static java.lang.Math.min;
 public class Main {
     public static void main(String[] args) {
         Scanner reader = new Scanner (System.in);
+
+
         // Zadatak 1
 
-      /*  System.out.println("Koliki niz želite ?");
+       System.out.println("Koliki niz želite ?");
             int arraySize = reader.nextInt();
             int[] taskArray = new int[arraySize];
 
@@ -39,13 +42,13 @@ public class Main {
                 {
                     System.out.println("Number is smaller than 10");
                 }
-            }   */
+            }
 
 
         //Zadatak 2
 
 
-      /* int[] taskTwoArray = {1,2,3,4,5,6,7,8,9,10,1,1,1,1,1};
+       int[] taskTwoArray = {1,2,3,4,5,6,7,8,9,10,1,1,1,1,1};
         if (taskTwoArray.length<=15)
         {
             for (int i=0; i<=taskTwoArray.length; i++)
@@ -70,12 +73,13 @@ public class Main {
         }else
         {
             System.out.println("Your array is too long.");
-        }   */
+        }
 
 
         //Zadatak 3
 
-             /*   int[] thirdTaskArray = {1,2,3,4,5,6,7};
+
+                int[] thirdTaskArray = {1,2,3,4,5,6,7};
 
                 int [] revertedOrderArray = new int[thirdTaskArray.length];
                 System.out.println("Original array: " );
@@ -90,13 +94,14 @@ public class Main {
                 {
                     revertedOrderArray[i] = thirdTaskArray[i];
                     System.out.print( revertedOrderArray[i] + " ");
-                }   */
+                }
+
 
         //Zadatak 4
 
 
 
-            /*    System.out.println("Enter a word to check if it's a palindrome ");
+               System.out.println("Enter a word to check if it's a palindrome ");
                 String wordToCheck = reader.nextLine();
 
                 char[]  palindromeCheck = wordToCheck.toLowerCase().toCharArray();
@@ -119,11 +124,14 @@ public class Main {
                 {
                 System.out.println("Your  word " + wordToCheck + " is not a palindrome.");
                 }
-            */
+
+
+             */
 
         //Zadatak 5
 
-       /*    System.out.println("Please enter lower number in range: ");
+
+          System.out.println("Please enter lower number in range: ");
             int lowerNumberInRange = reader.nextInt();
 
             System.out.println("Please enter higher number in range: ");
@@ -145,13 +153,14 @@ public class Main {
             } else
             {
                 System.out.println("Lower range number cannot be greater than higher range number.");
-            } */
+            }
 
 
 
         //Zadatak 6
 
-     /*     String[] firstArrayTaskSix = {"One", "Two", "Three"};
+
+         String[] firstArrayTaskSix = {"One", "Two", "Three"};
             String[] secondArrayTaskSix = {"Four", "Five"};
             String[] thirArrayTaskSix = {"Six"};
 
@@ -176,11 +185,12 @@ public class Main {
             for (int i = 0; i < resultArrayTaskSix.length; i++)
             {
             System.out.print(resultArrayTaskSix[i] + " ");
-            }    */
+            }
 
 
 
         //  Zadatak 7.
+
 
         int[] firstArray = {1,3,5,6};
 
@@ -214,14 +224,38 @@ public class Main {
         {
             System.out.println(resultArray[i]);
         }
+
+
+
         //Zadatak 8
+
+
+        String[] wordsTaskEight = {"hello", "hi", "WORD", "cmp", "why"};
+
+        String[] vowels = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"};
+
+        for (int i = 0; i < wordsTaskEight.length; i++)
+        {
+            boolean withVowel = false;
+            for (int j = 0; j < vowels.length; j++)
+            {
+                if (wordsTaskEight[i].contains(vowels[j]))
+                {
+                    withVowel = true;
+                }
+            }
+            if (!withVowel) {
+                System.out.println(wordsTaskEight[i]);
+            }
+        }
+
 
 
 
         //Zadatak 9
 
 
-       /* int[] firstArray = {1, 2, 3};
+        int[] firstArray = {1, 2, 3};
 
         int[] secondArray = {1, 2, 3};
         int sum = 0;
@@ -233,7 +267,7 @@ public class Main {
         }
 
         System.out.println("Total sum is: " + sum);
-*/
+
 
 
 

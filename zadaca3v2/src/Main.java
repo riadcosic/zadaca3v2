@@ -13,7 +13,8 @@ public class Main {
             int arraySize = reader.nextInt();
             int[] taskArray = new int[arraySize];
 
-            for ( int i = 0; i<=taskArray.length -1; i++) {
+            for ( int i = 0; i<=taskArray.length -1; i++)
+            {
 
                 System.out.println("Unesite broj : ");
                 int arrayNumber = reader.nextInt();
@@ -21,7 +22,8 @@ public class Main {
 
             } reader.nextLine();
 
-            for (int i = arraySize-1; i>=0; i--) {
+            for (int i = arraySize-1; i>=0; i--)
+            {
 
                 System.out.println(taskArray[i]);
 
@@ -49,6 +51,7 @@ public class Main {
 
 
        int[] taskTwoArray = {1,2,3,4,5,6,7,8,9,10,1,1,1,1,1};
+
         if (taskTwoArray.length<=15)
         {
             for (int i=0; i<=taskTwoArray.length; i++)
@@ -70,7 +73,7 @@ public class Main {
                 System.out.println("Fiftheenth number in array: " + taskTwoArray[14]);
             }
 
-        }else
+        } else
         {
             System.out.println("Your array is too long.");
         }
@@ -82,7 +85,9 @@ public class Main {
                 int[] thirdTaskArray = {1,2,3,4,5,6,7};
 
                 int [] revertedOrderArray = new int[thirdTaskArray.length];
+
                 System.out.println("Original array: " );
+
                 for (int i=0; i<thirdTaskArray.length; i++ )
                 {
                     System.out.print( thirdTaskArray[i] + " ");
@@ -102,6 +107,7 @@ public class Main {
 
 
                System.out.println("Enter a word to check if it's a palindrome ");
+
                 String wordToCheck = reader.nextLine();
 
                 char[]  palindromeCheck = wordToCheck.toLowerCase().toCharArray();
@@ -111,18 +117,19 @@ public class Main {
 
                 for (int i = 0; i <= arrayMiddle; i++)
                 {
-                if (palindromeCheck[i] == palindromeCheck[(palindromeCheck.length - 1) - i]) {
-                toCheckPalindrome = toCheckPalindrome + 1;
-                }
+                    if (palindromeCheck[i] == palindromeCheck[(palindromeCheck.length - 1) - i])
+                        {
+                            toCheckPalindrome = toCheckPalindrome + 1;
+                        }
                 }
 
                 if (toCheckPalindrome == (arrayMiddle + 1))
                 {
-                System.out.println("Your word " + wordToCheck + " is a palindrome.");
+                    System.out.println("Your word " + wordToCheck + " is a palindrome.");
                 }
                 else
                 {
-                System.out.println("Your  word " + wordToCheck + " is not a palindrome.");
+                    System.out.println("Your  word " + wordToCheck + " is not a palindrome.");
                 }
 
 
@@ -138,14 +145,13 @@ public class Main {
             int higherNumberInRange = reader.nextInt();
 
 
-
-
-
             if (lowerNumberInRange<=higherNumberInRange)
             {
                 System.out.println("Even numbers for range " + lowerNumberInRange + " to " + higherNumberInRange + " are: ");
-                for (int i = lowerNumberInRange + 1; i < higherNumberInRange; i++) {
-                    if (i % 2 == 0) {
+                for (int i = lowerNumberInRange + 1; i < higherNumberInRange; i++)
+                {
+                    if (i % 2 == 0)
+                    {
                         System.out.print(i + ", ");
                     }
 
@@ -160,11 +166,14 @@ public class Main {
         //Zadatak 6
 
 
-         String[] firstArrayTaskSix = {"One", "Two", "Three"};
+             String[] firstArrayTaskSix = {"One", "Two", "Three"};
+
             String[] secondArrayTaskSix = {"Four", "Five"};
+
             String[] thirArrayTaskSix = {"Six"};
 
             int resultArrayLengthTaskSix = firstArrayTaskSix.length + secondArrayTaskSix.length + thirArrayTaskSix.length;
+
             String[] resultArrayTaskSix = new String[resultArrayLengthTaskSix];
 
             for (int i = 0; i < firstArrayTaskSix.length; i++)
@@ -178,7 +187,7 @@ public class Main {
             }
 
             for (int i = firstArrayTaskSix.length + secondArrayTaskSix.length; i < resultArrayTaskSix.length; i++)
-             {
+            {
             resultArrayTaskSix[i] = thirArrayTaskSix[i - firstArrayTaskSix.length - secondArrayTaskSix.length];
             }
 
@@ -258,10 +267,13 @@ public class Main {
         int[] firstArray = {1, 2, 3};
 
         int[] secondArray = {1, 2, 3};
+
         int sum = 0;
 
-        for (int i = 0; i < firstArray.length; i++) {
-            for (int j = 0; j < secondArray.length; j++) {
+        for (int i = 0; i < firstArray.length; i++)
+        {
+            for (int j = 0; j < secondArray.length; j++)
+            {
                 sum+= firstArray[i] + secondArray[j];
             }
         }
